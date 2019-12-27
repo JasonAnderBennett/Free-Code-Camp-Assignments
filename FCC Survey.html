@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<!--I am only using inline styles since this is a standalone assignment and also super simple-->
+<link href="https://fonts.googleapis.com/css?family=Lilita+One&display=swap" rel="stylesheet">
+<style>
+body {
+	
+ background: url(testimage.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+#title{
+	color:white;
+	text-align:center;
+}
+p{
+	color:white;
+	text-align:center;
+}
+#name-label{
+	margin-bottom:2px;
+	color:white;
+}
+#name{
+	/*border-radius: 10%*/
+}
+#submit-button{
+	margin-top:10px;
+}
+</style>
+<title>Survey Form</title>
+<body>
+	
+<h1 id="title">FreeCodeCamp Survey Form Assignment</h1>
+
+<p id="description">Thank you for taking the time to view my work and help me improve</p>	
+
+
+<form id="survey-form">
+<div>
+
+	<h2 id="name-label">
+		<label for="email">Name</label>
+	</h2>
+			<input id="name" name="firstname" type="text" placeholder="Enter your full name" required>
+</div>
+<div>	
+	<h2 id="name-label">
+		<label for="email">Email</label>	
+	</h2>
+			<input id="Email" name="Email" type="Email" placeholder="Enter your Email" required>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <br>
+  	<input id="submit-button" type="submit" value="Submit">
+  </br>
+	</form>
+
+	</body>
