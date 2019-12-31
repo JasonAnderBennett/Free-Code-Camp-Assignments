@@ -5,7 +5,7 @@
 <style>
 body {
 	
- background: url(testimage.jpg) no-repeat center center fixed; 
+ background: url(https://w.wallhaven.cc/full/4o/wallhaven-4okyg9.jpg) no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -17,58 +17,151 @@ body {
 }
 p{
 	color:white;
-	text-align:center;
+	text-align:center;	
+}
+div{
+	color:white;
+	opacity:1;
 }
 #name-label{
 	margin-bottom:2px;
 	color:white;
+	
 }
-#name{
-	/*border-radius: 10%*/
+
+#number-label{
+	margin-bottom:2px;
+	color:white;
 }
-#submit-button{
-	margin-top:10px;
+.clue{
+	font-size: 12px;
+	margin-bottom:2px;
+	color:white;
 }
+#role-label{
+	margin-bottom:2px;
+	color:white;
+}
+#project-label{
+	margin-bottom:2px;
+	color:white;
+}
+#comment-label{
+	margin-bottom:2px;
+	color:white;
+}
+#input-textarea {
+    min-height:10px;
+    width: 90%;
+    padding: 0.625rem;
+    border-radius:0.50rem;
+  
+}
+.survey-form {
+	margin: auto;
+	border: solid;
+	background:rgba(21, 24, 24, 0.78);
+    padding: 2.5rem 0.625rem;
+    border-radius: 0.75rem;
+    max-width: 50%;
+
+}
+
+#submit{
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  border-radius:.25em;
+  font-size: 16px;
+  margin:20px 20px;
+  cursor: pointer;
+    width:400px;
+    padding:0.55rem;
+    display: block;
+}
+
 </style>
+<div id=main>
 <title>Survey Form</title>
 <body>
-	
+
 <h1 id="title">FreeCodeCamp Survey Form Assignment</h1>
 
 <p id="description">Thank you for taking the time to view my work and help me improve</p>	
 
 
-<form id="survey-form">
-<div>
+<form class="survey-form">
+<div id="form-control">
 
 	<h2 id="name-label">
 		<label for="email">Name</label>
 	</h2>
 			<input id="name" name="firstname" type="text" placeholder="Enter your full name" required>
 </div>
-<div>	
+<div id="form-control">	
 	<h2 id="name-label">
 		<label for="email">Email</label>	
 	</h2>
 			<input id="Email" name="Email" type="Email" placeholder="Enter your Email" required>
 </div>
+<div id="form-control">
+	<h2	id="number-label">
+		<label for="number">Age</label><span class="clue"> (optional)</span>
+	</h2>
 
+			<input type="number" name="age" id="number" min="10" max="99" class="form-control" placeholder="Age" required>
+</div>
 
+<div id="form-control">
 
+<h2	id="role-label">
+		<label for="role">Which option best describes your current role?</label>
+</h2>
 
+<select id="dropdown" name="role" class="form-control" required="">
+<option disabled="" selected="" value="">Select current role</option>
+<option value="student">Student</option>
+<option value="job">Full Time Job</option>
+<option value="learner">Full Time Learner</option>
+<option value="preferNot">Prefer not to say</option>
+<option value="other">Other</option>
+</select>
+</div>
 
+<div id="form-control">
+	<h2	id="number-label">
+		<label for="number">Would you recommend freeCodeCamp to a friend?
+		</label>
+	</h2>
+		<input type="radio" name="choice1" value="Definetly">Definetly<br>
+		<input type="radio" name="choice2" value="Maybe">Maybe<br>
+		<input type="radio" name="choice3" value="No">No<br>
+	
+</div>
+<div id="form-control">
+	<h2	id="project-label">
+			<label for="checkBox">What Projects would you like to see me complete?
+			</label>
+	</h2>
+			<input type="checkBox" name="projectchoice1" value="Webpages">Webpages<br>
+			<input type="checkBox" name="projectchoice2" value="Android">Android Apps<br>
+			<input type="checkBox" name="projectchoice3" value="Databases">Databases<br>
+			<input type="checkBox" name="projectchoice4" value="Javascript">JavaScript<br>
+				<input type="checkBox" name="projectchoice5" value="Python">Python<br>
 
+</div>
 
+<div id="form-control"> 
+		<h2	id="comment-label">
+			<label for="textArea">Please leave any feedback or Comments
+			</label>
+	</h2>
+<textarea id="comments" class="input-textarea" name="comment" placeholder="Enter your comment here..." style="margin-top: 0px; margin-bottom: 0px; width:90%; min-height: 10px;border-radius:.50rem"></textarea>
+</div>
 
+ <button type="submit" id="submit" class="submit-button">
+Submit
+</button>
 
-
-
-
-
-
-  <br>
-  	<input id="submit-button" type="submit" value="Submit">
-  </br>
 	</form>
-
 	</body>
