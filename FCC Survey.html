@@ -21,24 +21,24 @@ body {
 	opacity:1;
 	text-align:center;	
 }
-}
 #name-label{
 	margin-bottom:2px;
 	color:white;
 }
 #name{
 	border-radius:.25em;
+	
 }
 #email-label{
+	margin-top:12px;
 	margin-bottom:2px;
 	color:white;
-
 }
 #email{
 	border-radius:.25em;
 }
-
 #number-label{
+	margin-top:12px;
 	margin-bottom:2px;
 	color:white;
 }
@@ -50,7 +50,11 @@ body {
 	margin-bottom:2px;
 	color:white;
 }
+#role-label{
+	margin-bottom:2px;
+}
 #dropdown{
+	margin-top:1px;
 	margin-bottom:2px;
 	color:grey;
 	border-radius:.25em;
@@ -65,7 +69,7 @@ body {
 }
 #input-textarea {
     min-height:10px;
-    width: 90%;
+    width:90%;
     padding: 0.625rem;
     border-radius:.25rem;
   
@@ -75,10 +79,9 @@ body {
 	border: solid;
 	background:rgba(21, 24, 24, 0.78);
     padding-top: 1px;
-    border-radius: 0.25rem;
+    border-radius: 0.25em;
     max-width: 50%;
 }
-
 #submit{
   background-color: #4CAF50;
   border: none;
@@ -90,6 +93,8 @@ body {
     width:400px;
     padding:0.55em 0.55em;
     display: block;
+    margin-top:12px;
+    margin-bottom: 25px;
 }
 #form-control{
 	padding-left: 10px;
@@ -104,28 +109,33 @@ body {
 
 <p id="description">Thank you for taking the time to view my work and help me improve</p>	
 
-
 <form id="survey-form">
+
+
 <div id="form-control">
 
-	<h2 id="name-label">
-		<label for="email"id="name-label">Name</label>
-	</h2>
+	
+		<label for="name"id="name-label"><h2>Name</h2></label>
+	
 			<input id="name" name="firstname" type="text" placeholder="Enter your full name" required>
 </div>
-<div id="form-control">	
-	<h2 id="email-label">
-		<label for="email"id="email-label">Email</label>	
-	</h2>
-			<input id="email" name="Email" type="Email" placeholder="Enter your Email" required>
-</div>
-<div id="form-control">
-	<h2	id="number-label">
-		<label for="number"id="number-label">Age</label><span class="clue"> (optional)</span>
-	</h2>
 
-			<input type="number" name="age" id="number" min="10" max="99" class="form-control" placeholder="Age" required>
+
+<div id="form-control">	
+	
+		<label for="email"id="email-label"><h2>Email</h2></label>	
+	
+			<input id="email" name="email" type="email" placeholder="Enter your Email" required>
 </div>
+
+
+<div id="form-control">
+	
+		<label for="number"id="number-label"><h2>Age</h2></label>
+	
+			<input id="number" type="number" name="age" min="10" max="99" class="form-control" placeholder="Age" required>
+</div>
+
 
 <div id="form-control">
 
@@ -148,9 +158,9 @@ body {
 		<label for="number">Would you recommend freeCodeCamp to a friend?
 		</label>
 	</h2>
-		<input type="radio" name="choice1" value="Definetly">Definetly<br>
-		<input type="radio" name="choice2" value="Maybe">Maybe<br>
-		<input type="radio" name="choice3" value="No">No<br>
+		<input type="radio" name="user-recommend" value="Definetly" class="input-radio">Definetly<br>
+		<input type="radio" name="user-recommend" value="Maybe" class="input-radio">Maybe<br>
+		<input type="radio" name="user-recommend" value="No" class="input-radio">No<br>
 	
 </div>
 <div id="form-control">
